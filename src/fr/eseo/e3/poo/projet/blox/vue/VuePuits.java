@@ -18,12 +18,12 @@ public  class VuePuits extends JPanel implements PropertyChangeListener {
     private Puits puits;
     public int taille;
    
-    // à ajouter , modification associéé à vue piece
+   
    private VuePiece vuePiece;
 
     public VuePuits(Puits puits) {
         this(puits, TAILLE_PAR_DEFAUT);
-       // addPuitsListener(puits);
+       
     }
 
     public VuePuits(Puits puits, int taille) {
@@ -31,8 +31,7 @@ public  class VuePuits extends JPanel implements PropertyChangeListener {
         this.taille = taille;
         setPreferredSize(new Dimension(puits.getLargeur() * taille, puits.getProfondeur() * taille));
         setBackground(Color.WHITE);
-       // this.vuePiece = null;
-        //addPuitsListener(puits);
+       
 
     }
 
@@ -55,7 +54,7 @@ public  class VuePuits extends JPanel implements PropertyChangeListener {
         setPreferredSize(new Dimension(puits.getLargeur() * taille, puits.getProfondeur() * taille));
         //repaint();
     }
-// à ajouter
+
     public VuePiece getVuePiece() {
         return vuePiece;
     }
@@ -64,7 +63,7 @@ public  class VuePuits extends JPanel implements PropertyChangeListener {
         this.vuePiece = vuePiece;
         repaint();
     }
-// jusque içi
+
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
@@ -78,34 +77,18 @@ public  class VuePuits extends JPanel implements PropertyChangeListener {
         for (int i = 0; i <= largeur; i++) {
             g2d.drawLine(i * taille, 0, i * taille, hauteur * taille);
         }
-//        // à ajouter
+
         if (vuePiece != null) {
             vuePiece.afficherPiece(g2d);
         }
-        // jusque içi
+       
         g2d.dispose();
     }
     
     
     
     
-//    public void propertyChange(PropertyChangeEvent evt) {
-//        if (evt.getPropertyName().equals("pieceActuelle")) {
-////            VuePiece vuePiece = getVuePiece();
-////            vuePiece.setPiece(getPuits().getPieceActuelle());
-//            
-//        	  this.setVuePiece((VuePiece) evt.getNewValue());
-//            repaint();
-//        }
-//    }
-    
-//    public void addPuitsListener1(Puits puits) {
-//        puits.addPropertyChangeListener(this);
-//    }
-//    
-//    public void addPuitsListener(Puits puits) {
-//        puits.addPropertyChangeListener(this);
-//    }
+
     
     
     public void propertyChange(PropertyChangeEvent evt) {
