@@ -33,25 +33,7 @@ public class VuePiece {
 	    }
 
 	 
-//	    public void afficherPiece(Graphics2D g2D) {
-//	        Coordonnees refCoord = piece.getCoordonnees();
-//	        List<Element> refElement = piece.getElement();
-//
-//	        for (Element e : piece.getElement()) {
-//	            int x = e.getCoordonnees().getAbscisse() * taille;
-//	            int y = e.getCoordonnees().getOrdonnee() * taille;
-//
-//	            if (e.equals(refElement)) {
-//	               // g2D.setColor(teinte(((Element) refElement).getCouleur()));
-//	            	g2D.setColor(teinte(refCoord.getCouleur()));
-//	            } else {
-//	                g2D.setColor(e.getCouleur());
-//	            }
-//
-//	            g2D.fill3DRect(x, y, taille, taille, true);
-//	        }
-//	    }
-	
+
 	    
 	    
 	    public void afficherPiece(Graphics2D g2D) {
