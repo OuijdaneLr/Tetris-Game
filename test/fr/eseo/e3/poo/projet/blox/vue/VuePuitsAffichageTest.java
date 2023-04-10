@@ -55,13 +55,13 @@ public class VuePuitsAffichageTest {
 	            frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 	            // make the JFrame visible
 	            frame.setVisible(true);
-//	         // wait for user input before closing the JFrame
+	         // wait for user input before closing the JFrame
 	            //System.in.read();
-//	            // close the JFrame
+	            // close the JFrame
 	           // frame.dispose();
 	        });
 		// });
-////	        // wait for the GUI to be created
+	        // wait for the GUI to be created
 	        try {
 	            Thread.sleep(1000);
 	        } catch (InterruptedException e) {
@@ -69,8 +69,8 @@ public class VuePuitsAffichageTest {
 	        }
 	 }
 
-////	        // check that the JFrame has the correct title
-////	       // Assertions.assertEquals("Puits", SwingUtilities.getWindowAncestor(VuePuitsTest.this).getTitle());
+	        // check that the JFrame has the correct title
+	       // Assertions.assertEquals("Puits", SwingUtilities.getWindowAncestor(VuePuitsTest.this).getTitle());
 	    
 
 	    @Test
@@ -90,13 +90,13 @@ public class VuePuitsAffichageTest {
 	            frame.setDefaultCloseOperation(JFrame.DO_NOTHING_ON_CLOSE);
 	            // make the JFrame visible
 	            frame.setVisible(true);
-//	         // wait for user input before closing the JFrame
-//	            //System.in.read();
-//	            // close the JFrame
-//	            frame.dispose();
+	         // wait for user input before closing the JFrame
+	            //System.in.read();
+	            // close the JFrame
+	            frame.dispose();
 	        });
 	    	 });
-//////	        // wait for the GUI to be created
+	        // wait for the GUI to be created
 	        try {
 	            Thread.sleep(1000);
 	        } catch (InterruptedException e) {
@@ -110,9 +110,9 @@ public class VuePuitsAffichageTest {
 	    @Test
 		public void testAjoutPieceVuePuits() {
 			SwingUtilities.invokeLater(() -> {
-//				// create a new JFrame with the title "Puits avec piece"
+				// create a new JFrame with the title "Puits avec piece"
 				JFrame frame = new JFrame("Puits avec piece");
-//				// create an instance of VuePuits using the constructor with one parameter and add it to the JFrame
+				// create an instance of VuePuits using the constructor with one parameter and add it to the JFrame
 				Puits puits = new Puits();
 				UsineDePiece.setMode(UsineDePiece.ALEATOIRE_PIECE);
 			});
