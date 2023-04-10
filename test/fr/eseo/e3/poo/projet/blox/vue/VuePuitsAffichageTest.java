@@ -69,8 +69,7 @@ public class VuePuitsAffichageTest {
 	        }
 	 }
 
-	        // check that the JFrame has the correct title
-	       // Assertions.assertEquals("Puits", SwingUtilities.getWindowAncestor(VuePuitsTest.this).getTitle());
+	      
 	    
 
 	    @Test
